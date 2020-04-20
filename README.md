@@ -4,10 +4,14 @@ FOAM Generator implementation in JAVA
 Example code included will generate random numbers from distribution
 given by the class CosineFunction2D.java. To get started use command:
 
->mvn install
->./foam.sh
+```bash
+  >mvn install
+  >./foam.sh
+```
 
 This executes main method of class MCFoam shown here:
+
+```java
 
   CosineFunction2D cosFunc = new CosineFunction2D();
   MCFoam foam = new MCFoam(cosFunc);
@@ -18,7 +22,8 @@ This executes main method of class MCFoam shown here:
       System.out.println(ArrayUtils.getString(values,"%.5f", " "));
    }
    foam.showStats();
-        
+```
+
 To implement your own density function extend IMCFunc interface and override 2 functions
 line in the example of CosineFunction2D.java class. 
 
