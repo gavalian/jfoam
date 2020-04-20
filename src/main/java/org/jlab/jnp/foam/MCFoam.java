@@ -132,7 +132,7 @@ public class MCFoam {
         MCFoam foam = new MCFoam(cosFunc);
         foam.init();
         double[] values = new double[2];
-        for(int i = 0; i < 50000; i++){
+        for(int i = 0; i < 5000000; i++){
             foam.getRandom(values);
             System.out.println(ArrayUtils.getString(values,"%.5f", " "));
             //System.out.println(values);
