@@ -24,6 +24,10 @@ This executes main method of class MCFoam shown here:
    foam.showStats();
 ```
 
+Resulting 2D distribution looks like this:
+
+.. image: ./src/main/resources/demo/jfoam_demo.png
+
 To implement your own density function extend IMCFunc interface and override 2 functions
 line in the example of CosineFunction2D.java class. 
 
