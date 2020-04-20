@@ -27,6 +27,8 @@ This executes main method of class MCFoam shown here:
 To implement your own density function extend IMCFunc interface and override 2 functions
 line in the example of CosineFunction2D.java class. 
 
+```java
+
   public class CosineFunction2D implements IMCFunc {  
     double x1 = 0.5;
     double y1 = 0.5;
@@ -46,5 +48,6 @@ line in the example of CosineFunction2D.java class.
      }
     
    }
-  
+```
+
 And initialize MCFoam with your implementation of IMCFoam interface.
